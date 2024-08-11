@@ -29,8 +29,8 @@ app.use(cors()); // Allow all origins by default
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/cart', cartRoutes); // Use cart routes
 app.use('/api', productRoutes);
-app.use('/api', cartRoutes)
 
 const PORT = process.env.PORT || 5000;
 
